@@ -1,9 +1,33 @@
+import Navbar from "./components/Navbar/Navbar"
+
 function App() {
 
+  // Mock data for Navbar
+  const menuItemLinks = [
+    {
+      label: 'Collections',
+      url: '/'
+    },
+    {
+      label: 'Men',
+      url: '/'
+    },
+    {
+      label: 'Women',
+      url: '/'
+    },
+    {
+      label: 'About',
+      url: '/'
+    },
+    {
+      label: 'Contact',
+      url: '/'
+    }
+  ]
+
   return (
-    <h1 className="text-3xl font-bold text-blue-500 text-center underline">
-      Hello world!
-    </h1>
+    <Navbar NavbarMenuItem={menuItemLinks} />
   )
 }
 
